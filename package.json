@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-example",
+  "version": "1.0.0",
+  "description": "nodejs-example",
+  "main": "index.js",
+  "scripts": {
+    "pro": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3"
+  }
+}
