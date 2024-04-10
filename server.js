@@ -1,12 +1,6 @@
 const express = require("express");
-require("dotenv").config();
 
 const app = express();
-
-const env = {
-  port: process.env.PORT,
-  author: process.env.AUTHOR,
-};
 
 app.get("/", (req, res) => {
   res.send({
@@ -23,10 +17,9 @@ app.get("/ip", (req, res) => {
     "";
   res.send({
     ip,
-    author: env.author,
   });
 });
 
-app.listen(env.port, () => {
-  console.log(`Server started on port ${env.port}`);
+app.listen(8080, () => {
+  console.log(`Server started on port ${8080}`);
 });
